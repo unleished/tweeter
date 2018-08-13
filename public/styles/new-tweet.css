@@ -1,0 +1,33 @@
+/* section {
+  margin: 1em;
+} */
+.new-tweet {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 2em;
+  margin-right: 2em;
+  padding: .5em;
+  border-radius: 15px;
+  background-color: #eee;
+  border: 2px solid;
+  border-color: #ccc;
+
+}
+
+h2 {
+  border-bottom: 1px solid #ccc;
+}
+
+
+textarea {
+
+  width: 100%;
+}
+
+/* input {
+  padding-bottom: 5px;
+
+} */
+.counter {
+  float: right;
+}

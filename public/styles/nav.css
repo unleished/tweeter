@@ -1,0 +1,28 @@
+
+/* Tip: add a bunch of empty or placeholder lines or paragraphs to the body so
+you can see how it behaves when you scroll vertically. */
+
+
+#nav-bar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  height: 80px;
+  background-color: #00a087;
+  width: 100%;
+  padding-left: 2em;
+  padding-right: 2em;
+  align-items: center;
+
+}
+
+#nav-bar .header {
+  color: #e8fdff;
+  font-size: 2em;
+  padding-left: 10px;
+}
+
+#nav-bar .logo {
+  width: 80px;
+  height: 80px;
+}
