@@ -1,19 +1,21 @@
 $(document).ready(function() {
   // --- our code goes here ---
-  const newTweet = document.querySelector(".new-tweet");
+  // const newTweet = document.querySelector(".new-tweet");
 
-  $(".new-tweet").find('textarea').on('input', function() {
-      let textCount = ($(this).val().length);
-
-      let counterNum = 140 - textCount;
-      let counterText;
+  $('.text-box').on('keyup', function() {
+      var textCount = ($(this).val().length);
+      var counterNum = 140 - textCount;
 
       if (counterNum < 0) {
-        counterText = $(this).siblings('.counter').text(counterNum).css('color', 'red');
+        $(this).parent().find('.counter').text(counterNum).css('color', 'red');
       } else {
-        counterText = $(this).siblings('.counter').text(counterNum);
+        $(this).parent().find('.counter').text(counterNum).css('color', 'black');
       }
   });
 
+
   console.log('document ready called');
+
+
+
 });

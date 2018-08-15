@@ -10,7 +10,6 @@
   border-bottom: 1px solid #ccc;
 }
 
-/* create a class for this */
 .text-box {
   width: 100%;
 }
@@ -72,4 +71,9 @@
   margin-right: .5em;
   color: blue;
   opacity: 0;
+}
+
+#error {
+  color: red;
+  text-align: center;
 }

@@ -15,6 +15,21 @@ you can see how it behaves when you scroll vertically. */
   padding: 0 2em;
 }
 
+#nav-bar #composeBtn {
+  position: absolute;
+  right: 25px;
+  grid-column: 4;
+  padding: 1em .5em;
+  border: 1px solid black;
+  border-radius: 10px;
+  color: #00a087;
+}
+
+#composeBtn:hover {
+  background-color: #ccc;
+  border: 2px solid white;
+}
+
 #nav-bar .header {
   color: #e8fdff;
   font-size: 2em;
@@ -22,6 +37,7 @@ you can see how it behaves when you scroll vertically. */
 }
 
 #nav-bar .logo {
+  float: left;
   width: 80px;
   height: 80px;
 }

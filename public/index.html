@@ -26,6 +26,7 @@
     <nav id="nav-bar">
       <img class="logo" src="/images/bird.png" />
       <span class="header">Tweeter</span>
+      <button id='composeBtn'><i class="far fa-edit"></i>Compose</button>
     </nav>
 
     <!-- Page-specific (main) content here -->
@@ -35,12 +36,17 @@
         <section class="new-tweet">
           <h2>Compose Tweet</h2>
           <form action='/tweets' method='POST'>
-            <textarea class='text-box' name="text" placeholder="What are you humming about?"></textarea>
+            <textarea class='text-box' name="text" placeholder="What are you humming about?" required minlength=1 ></textarea>
             <div class='tweet-submit'>
               <input type="submit" value="Tweet">
               <span class="counter">140</span>
             </div>
           </form>
+          <div id='error'>
+              <p>Your tweet is too long. Please edit it and submit again.</p>
+            </div>
+          </div>
+
         </section>
 
         <div id="tweetContainer">
@@ -54,7 +60,7 @@
               <p> here is the tweet </p>
             </section>
             <footer class='tweet-footer'>
-              <p> posted X days ago </p>
+              <p> posted 3 days ago </p>
               <div class='icons'>
                 <i class="fas fa-flag"></i>
                 <i class="fas fa-retweet"></i>
