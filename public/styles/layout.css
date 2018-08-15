@@ -5,8 +5,8 @@
  */
 html {
   box-sizing: border-box;
-
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -15,28 +15,16 @@ html {
  * Global layout stuff
  */
 
-
 body {
   color: #244751;
   background-color: #eee;
   font-family: 'Roboto Condensed', sans-serif;
-  width: 100%;
-
-}
-.container__bg {
-  padding-top: 25px;
-  background-color: white;
 }
 
- .container {
+.container {
   width: 450px;
   background-color: white;
   margin: auto;
   margin-top: 80px;
-
+  padding: 25px 0;
 }
-
-
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
