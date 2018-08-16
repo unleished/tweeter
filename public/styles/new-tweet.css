@@ -32,6 +32,7 @@
 .tweet-display p{
   padding-left: .5em;
   padding-right: .5em;
+  word-wrap: break-word;
 }
 
 .tweet-header {
