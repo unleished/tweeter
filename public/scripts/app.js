@@ -1,9 +1,10 @@
 $(document).ready(function() {
-
+// launch the tweet feed with these elements hidden.
   $('.new-tweet').hide();
   $('.new-tweet').find('#error').hide();
   $('.new-tweet').find('#errorShort').hide();
 
+//shows tweet input
   $('#composeBtn').click(function() {
     $('.new-tweet').slideToggle('slow');
     $('textarea').focus();
@@ -14,7 +15,7 @@ $(document).ready(function() {
        $('#tweetContainer').append(createTweetElement(tweet));
      }
    }
-
+//create and return an article html element generated dynamically
    function createTweetElement(tweetData) {
      var $tweet = $("<article>").addClass("tweet-display");
      var $tweetHeader = $("<header>").addClass('tweet-header');
@@ -60,6 +61,7 @@ $(document).ready(function() {
      return $tweet;
    }
 
+//tweet submit ajax and validation
    $("form").on('submit', function (event) {
      event.preventDefault();
      $('.new-tweet').find('#error').hide();
@@ -85,7 +87,7 @@ $(document).ready(function() {
            })
       }
     });
-
+//ajax call to display new tweet in feed
   function loadTweets(){
     $.ajax({
       type: 'GET',
