@@ -36,15 +36,18 @@
         <section class="new-tweet">
           <h2>Compose Tweet</h2>
           <form action='/tweets' method='POST'>
+            <div id='error'>
+              <p>Your tweet is too long. Please edit it and submit again.</p>
+            </div>
+            <div id='errorShort'>
+              <p>Please add your tweet.</p>
+            </div>
             <textarea class='text-box' name="text" placeholder="What are you humming about?" required minlength=1 ></textarea>
             <div class='tweet-submit'>
               <input type="submit" value="Tweet">
               <span class="counter">140</span>
             </div>
           </form>
-          <div id='error'>
-              <p>Your tweet is too long. Please edit it and submit again.</p>
-            </div>
           </div>
 
         </section>
