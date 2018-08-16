@@ -1,38 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- External CSS -->
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <style> @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,700,700i'); </style>
-
-    <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
-    <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
-
-    <!-- App JS -->
     <script type="text/javascript" src="/scripts/app.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
   </head>
   <body>
-    <!-- Top nav bar (fixed) -->
     <nav id="nav-bar">
       <img class="logo" src="/images/bird.png" />
       <span class="header">Tweeter</span>
       <button id='composeBtn'><i class="far fa-edit"></i>Compose</button>
     </nav>
-
-    <!-- Page-specific (main) content here -->
     <main class="container">
-
-
         <section class="new-tweet">
           <h2>Compose Tweet</h2>
           <form action='/tweets' method='POST'>
@@ -42,16 +30,14 @@
             <div id='errorShort'>
               <p>Please add your tweet.</p>
             </div>
-            <textarea class='text-box' name="text" placeholder="What are you humming about?" required minlength=1 ></textarea>
+            <textarea class='text-box' name="text" placeholder="What are you humming about?" ></textarea>
             <div class='tweet-submit'>
               <input type="submit" value="Tweet">
               <span class="counter">140</span>
             </div>
           </form>
           </div>
-
         </section>
-
         <div id="tweetContainer">
           <article class='tweet-display'>
             <header class='tweet-header'>
@@ -72,7 +58,6 @@
             </footer>
           </article>
         </div>
-
     </main>
   </body>
 </html>

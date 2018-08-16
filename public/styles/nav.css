@@ -1,12 +1,8 @@
-
-/* Tip: add a bunch of empty or placeholder lines or paragraphs to the body so
-you can see how it behaves when you scroll vertically. */
-
-
 #nav-bar {
   display: flex;
   align-items: center;
   position: fixed;
+  z-index: 7;
   top: 0;
   left: 0;
   right: 0;
