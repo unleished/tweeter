@@ -20,3 +20,8 @@ This repository was forked and built upon to practice my HTML, CSS, JS, jQuery a
 - MongoDB
 
 ## Screen Shots
+!["Tweeter Application on Load"](https://github.com/unleished/tweeter/blob/master/docs/TweeterPage_onLoad.png?raw=true)
+!["Compose Button Click shows the Compose Tweet section"](https://github.com/unleished/tweeter/blob/master/docs/TweeterPage_ComposeClick.png?raw=true)
+!["Error message if Compose Tweet text box has no input"](https://github.com/unleished/tweeter/blob/master/docs/TweeterPage_EmptyError.png?raw=true)
+!["Error message if Tweet has more characters than allowed"](https://github.com/unleished/tweeter/blob/master/docs/TweeterPage_TooManyCharacters.png?raw=true)
+!["Screenshot description"](URL)
