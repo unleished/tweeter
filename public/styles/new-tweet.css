@@ -42,6 +42,14 @@
   background-color: #eee;
 }
 
+
+@media (max-width: 400px){
+  .tweet-header {
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+}
+
 .tweet-header h2 {
   flex: 1 1 auto;
 }
